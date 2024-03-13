@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <h1>Formulário de Contato</h1>
-    <form action="/submit_form" method="post">
-        <label for="name">Nome:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="message">Mensagem:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-        <input type="submit" value="Enviar">
-    </form>
+
+<h2>Formulário de Cadastro</h2>
+
+<form action="/submit" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required><br><br>
+
+    <label for="confirmar_senha">Confirmar Senha:</label>
+    <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
+
+    <input type="submit" value="Cadastrar">
+</form>
+
 </body>
 </html>
 
